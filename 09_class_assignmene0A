@@ -1,0 +1,8 @@
+class vehicle{
+    constructor(name,passing,wheels,color,compony ){
+   this. name;
+   this.passing;
+   this.wheels; 
+   this.color;
+   this.compony;}
+}

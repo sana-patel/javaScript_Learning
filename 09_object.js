@@ -3,9 +3,10 @@ let personMohit = {
     city:"pune",
     age:32,
     isMarried:true,}
-  console.log(Object.entries(personMohit));  
-
-
+  console.log(Object.entries(personMohit)); 
+  console.log("....................................");
+  let isAvailable="fullName" in personMohit
+console.log(isAvailable);
 
 let person = {
     fullName:"sachin Tendulkar",

@@ -1,19 +1,24 @@
-let teacher = {
-    fullName:"Radha patil",
-    age:32,
+let personMohit = {
+    fullName:"Mohit Tendulkar",
     city:"pune",
-    state:"MH",
-    subject:"Computer",
-    Education:"MCA",
-    eat:function(){
-        console.log("I am Vegetarian");
-    },
-    height: "5.5"
+    age:32,
+    isMarried:true,}
+  console.log(Object.entries(personMohit)); 
+  console.log("...............  In operator.......................");
+  let isAvailable="fullName" in personMohit
+console.log(isAvailable);
+console.log("...............  For in.......................");
+const mohitPerson =  {
+    fullName: "Sachin Tendulkar",
+    age: 42,
+    "isMarried": true
 }
-
-console.log(teacher)
-teacher.eat()
-teacher.city = "Pune"
-console.log(teacher.city)
-console.table(teacher)
-console.log(teacher)
+for (const key in mohitPerson) {
+    if (Object.hasOwnProperty.call(mohitPerson, key)) {
+        const element = mohitPerson[key];
+        console.log(element);
+        
+    }
+}
+console.log(s1 instanceof Student);
+console.log(sachin instanceof Student);
