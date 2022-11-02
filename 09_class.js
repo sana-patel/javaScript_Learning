@@ -13,17 +13,17 @@ console.log(sachin);
 console.log(rohit);
 
 
-console.log(s1 instanceof Student);
+//console.log(s1 instanceof Student);
 console.log(sachin instanceof Student);
 
 
-details(){
+details()
     console.log(`Person Details: ${this.fullName}  ${this.city}  ${this.age}  ${this.gender}`);
-}
+
 sachin.details();
 
-details (){
+details ()
     console.log(`Person Details: ${this.fullName}  ${this.city}  ${this.age}  ${this.gender}`);
-}
+
 sachin.details();
 

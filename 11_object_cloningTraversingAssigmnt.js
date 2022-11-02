@@ -38,15 +38,18 @@ rate_of_interest ={
  console.log(rate_of_interest);
 
  console.log("step.5======merge step1,2 and 4==============");
- sbi_details = Object.assign(bank_sbi,bank_location,rate_of_interest);
+ let sbi_details = Object.assign(bank_sbi,bank_location,rate_of_interest);
  console.log(sbi_details);
  console.table(sbi_details);
 
 console.log('step.6.===traverse object by using loop=====');
 
-for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
+for (const key in sbi_details) {
+    if (Object.hasOwnProperty.call(sbi_details, key)) {
+        const element = sbi_details [key] ;
+        console.log(key,"=",element);
+
         
     }
-}+22
+}
+
