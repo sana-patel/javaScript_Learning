@@ -22,8 +22,19 @@ class employee {
    array_emps.push(emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny,emp_mahi)
    console.table(array_emps);
    console.log(".................................................");
-   array_emps.filter((key,value)=>{
-    return key.emp_compony="Wipro",value
- 
+   console.log(" The employees from ‘Wipro’ company");
+   const array_new = array_emps.filter((element)=>{
+    if ( element.emp_compony= "Wipro") {
+       
+    }
+    
+       
    })
-   
+   console.log(array_new);
+console.log(".........................................................");
+console.log("Q.2 The employees from ‘IT’ OR ‘HR’ dept");
+array_emps.filter((element)=>{
+ if (element.emp_dept=="IT"||"HR") {
+   return element
+ }
+})
